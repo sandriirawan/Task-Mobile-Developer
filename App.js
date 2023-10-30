@@ -1,5 +1,4 @@
 import { StatusBar } from "expo-status-bar";
-import Login from "./screens/Login";
 import Navigator from "./screens/Navigator";
 
 export default function App() {
@@ -7,7 +6,6 @@ export default function App() {
     <>
       <StatusBar style="auto" />
       <Navigator />
-      {/* <Login /> */}
     </>
   );
 }
