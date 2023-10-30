@@ -1,8 +1,13 @@
-import { StatusBar } from "expo-status-bar";
 import { Text, TextInput, TouchableHighlight, View } from "react-native";
+import React from "react";
+import { useNavigation } from "@react-navigation/native";
 
-export default function App() {
-  const onPressButton = () => {};
+const Login = () => {
+  const navigation = useNavigation();
+
+  const onPressButton = () => {
+    navigation.navigate("Home");
+  };
   return (
     <View className="flex-1 items-center justify-center bg-white">
       <Text className="font-medium text-xl">Login</Text>
@@ -19,7 +24,8 @@ export default function App() {
       >
         <Text className="text-white font-normal text-xs">Masuk ke Akun</Text>
       </TouchableHighlight>
-      <StatusBar style="auto" />
     </View>
   );
-}
+};
+
+export default Login;
