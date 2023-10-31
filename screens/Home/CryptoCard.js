@@ -1,15 +1,23 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
+import { useNavigation } from "@react-navigation/native";
 
 const CryptoCard = (props) => {
   const { data } = props;
 
+  const navigation = useNavigation();
+
+  const handleCardPress = (item) => {
+    navigation.navigate("Detail", { cryptoData: item });
+  };
+
   return (
     <View className="pb-32">
       {data.map((item, index) => (
-        <View
+        <TouchableOpacity
           className="w-full h-[86px] bg-[#F0F0F04D] flex-row p-3 items-center justify-between mb-2 rounded-2xl"
           key={index}
+          onPress={() => handleCardPress(item)}
         >
           <View className="flex-row space-x-2">
             <Image source={{ uri: item.icon }} className="w-8 h-8" />
@@ -32,7 +40,7 @@ const CryptoCard = (props) => {
               {item.change}%
             </Text>
           </View>
-        </View>
+        </TouchableOpacity>
       ))}
     </View>
   );

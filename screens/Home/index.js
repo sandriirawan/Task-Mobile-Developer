@@ -8,6 +8,7 @@ import {
 } from "react-native";
 import React, { useEffect, useState } from "react";
 import CryptoCard from "./CryptoCard";
+import Ionicons from "react-native-vector-icons/Ionicons";
 
 const Home = () => {
   const [cryptoData, setCryptoData] = useState([]);
@@ -26,7 +27,13 @@ const Home = () => {
   return (
     <SafeAreaView>
       <ScrollView className="bg-white pt-20 w-full h-full">
-        <View className="px-4">
+        <View className="px-4 flex-row relative w-full">
+          <Ionicons
+            name="search"
+            size={20}
+            className="absolute"
+            style={{ position: "absolute", zIndex: 2, right: 30, top: 6 }}
+          />
           <TextInput
             placeholder="cari aset"
             placeholderTextColor={"black"}

@@ -3,6 +3,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import Login from "../Login";
 import Home from "../Home";
+import Detail from "../Detail";
 
 const Stack = createStackNavigator();
 
@@ -18,6 +19,11 @@ const Navigator = () => {
         <Stack.Screen
           name="Home"
           component={Home}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Detail"
+          component={Detail}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
