@@ -1,13 +1,14 @@
 <br />
 <p align="center">
 <div align="center">
-  <img height="150" <img src="https://github.com/sandriirawan/Task-Mobile-Developer/assets/80002249/f6f8ab4c-59f5-4926-993a-79c1fd7a770b" alt="logo" border="0"/>
+  <img height="150" <img src="https://github.com/sandriirawan/Task-Mobile-Developer/assets/80002249/1011ae23-67ac-4653-bd39-5aa4b3e7f09e" alt="logo" border="0"/>
 </div>
   <h3 align="center">Task Mobile Developer</h3>
   <p align="center">
     <a href="https://blanja-delta.vercel.app/home"><strong>Download  Apk »</strong></a>
   </p>
 </p>
+
 
 
 ## Table of Contents
